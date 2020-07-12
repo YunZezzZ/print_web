@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+
+<html lang="zh-cmn-Hans">
+<title>Printer</title>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet"/>
+    <link href="css/common.css" rel="stylesheet"/>
+    <script src="./main.js" type="text/javascript"></script>
+</head>
+
+<body>
+<div style="padding: 10px;-webkit-app-region: drag;height: 40px; width: 100%; background: #FFF; position: fixed">
+    <p style="width: 100px; display: inline;padding: 5px;-webkit-app-region: drag;height: 20px;font-size: 14px;
+    color: #666666;font-weight: bold;font-family: '微软雅黑'"> <img id="titleImg">Printer</p>
+    <input type="button" id="closeWin" class="btn btn-default" value="✖" onclick="closeWin()" style="float:right;background-color: #ffffff;
+    padding: 0px 10px;border: none; -webkit-app-region: no-drag;height: 20px;margin-right: 10px;box-shadow:none;outline: none;">
+    <input type="button" id="minimize" class="btn btn-default" value="—" onclick="minimize()" style="float:right;background-color: #ffffff;
+    padding: 0px 10px;border: none; -webkit-app-region: no-drag;height: 20px;margin-right: 10px;box-shadow:none;outline: none;">
+</div>
+<div class="setting_top separate_line" style="padding-top: 40px">
+    <div style="padding-top: 20px;padding-bottom: 20px;">
+        <div style="margin: 15px 50px 15px 20px;">
+            <span class="text-right">打印机：</span>
+            <select id='printers' class="form-control setting_slct"></select>
+        </div>
+    </div>
+</div>
+<div class="setting_footer separate_line">
+    <div class="footer_btn" style="margin-bottom: 10px">
+        <input type="button" value="打印" onclick="printFiles()" class="btn btn-danger print_btn">
+    </div>
+</div>
+</body>
+</html>

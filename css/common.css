@@ -1,0 +1,105 @@
+.setting_slct {
+    /*width: 58%*/
+    width: calc(100% - 79px);
+}
+.setting_top{
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+    margin-top: 0px;
+}
+.setting_footer{
+    width: 100%;
+    height: 45px;
+    padding: 14px;
+   
+}
+.footer_btn{
+    float: right;
+    margin-right: 20px;
+}
+
+.print_btn{
+    padding-left: 20px;
+    padding-right: 20px;
+    border: none;
+    background-color: #E5E9EC;
+    color: rgba(102,102,102,1);
+    font-size:12px;
+    font-weight: 400;
+    width: 68px;
+    height: 32px;
+    outline: none!important;
+    transition: opacity .3s linear;
+}
+.print_btn:hover{
+    opacity: .7;
+}
+.btn-danger{
+    color: #fff;
+    background-image: linear-gradient(rgba(252,76,47,1) 0%, rgba(238,34,35,1) 100%);
+}
+#saveDevice{
+    width: 92px;
+    height: 32px;
+    margin-right: 50px;
+    transition: opacity .2s linear;
+}
+.separate_line{
+    border-top-style: solid;
+    border-color: #f4f4f4;
+}
+#addMargin{
+    margin: 15px 50px 15px 99px;
+}
+.margin-cover{
+    display: inline-block;
+    width: 40%;
+    position: relative;
+}
+.addMinusBtn{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 24px;
+    height: 34px;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+}
+.addBtn,.minusBtn{
+    height: 17px;
+    text-align: center;
+    border:1px solid rgba(217,217,217,1);
+    transition: background-color .2s linear;
+}
+.addBtn:hover,.minusBtn:hover{
+    background-color: #dddddd;
+}
+.addBtn{
+    border-top-right-radius: 4px;
+    border-bottom: 0;
+    background-size: 14px;
+}
+.minusBtn{
+    border-bottom-right-radius: 4px;
+    background-size: 14px;
+}
+.margin-cover .form-control{
+    width: calc(100% - 56px);
+}
+/*去掉谷歌number类型input框箭头*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+/*去掉谷歌select下拉框箭头*/
+select{
+    appearance:none;
+    -moz-appearance:none;
+    -webkit-appearance:none;
+    padding-right: 14px;
+}
+.form-control.setting_slct{
+    background-size: 14px;
+}
